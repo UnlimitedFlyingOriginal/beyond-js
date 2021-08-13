@@ -1,20 +1,22 @@
 function inputScores() {
-  const korean = isNaN(parseInt(prompt("국어점수를 입력해주세요.")))
-    ? 0
-    : korean;
-  const english = isNaN(parseInt(prompt("영어점수를 입력해주세요.")))
-    ? 0
-    : english;
-  const math = isNaN(parseInt(prompt("수학점수를 입력해주세요."))) ? 0 : math;
-  const scores = [korean, english, math];
+  let korean = parseInt(prompt("국어점수를 입력해주세요."));
+  korean = isNaN(korean) ? 0 : korean;
+  let english = parseInt(prompt("영어점수를 입력해주세요."));
+  english = isNaN(english) ? 0 : english;
+  let math = parseInt(prompt("수학점수를 입력해주세요."));
+  math = isNaN(math) ? 0 : math;
+
+  let scores = [korean, english, math];
 
   return scores;
 }
 
 function checkMakeUpClass(scores) {
-  if (scores[0] <= 50 && scores[1] <= 50 && scores[2] <= 50) {
+  const _scores = scores;
+
+  if (_scores[0] <= 50 && _scores[1] <= 50 && _scores[2] <= 50) {
     console.log("종합반");
-  } else if (scores[0] <= 50 || scores[1] <= 50 || scores[2] <= 50) {
+  } else if (_scores[0] <= 50 || _scores[1] <= 50 || _scores[2] <= 50) {
     console.log("단과반");
   } else {
     console.log("보충 수업 없음");

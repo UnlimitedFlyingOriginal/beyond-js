@@ -23,10 +23,7 @@ function checkMakeUpClass(scores) {
 
 function init() {
   const scores = inputScores();
-
-  if (scores.length > 0) {
-    checkMakeUpClass(scores);
-  }
+  checkMakeUpClass(scores);
 }
 
 init();

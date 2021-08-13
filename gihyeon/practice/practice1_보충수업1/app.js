@@ -39,11 +39,8 @@ function checkMakeUpClass(avgScore) {
 
 function init() {
   const scores = inputScores();
-
-  if (scores.length > 0) {
-    const avgScore = calAvg(scores);
-    checkMakeUpClass(avgScore);
-  }
+  const avgScore = calAvg(scores);
+  checkMakeUpClass(avgScore);
 }
 
 init();

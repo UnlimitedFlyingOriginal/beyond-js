@@ -21,7 +21,7 @@ function inputScores() {
 
   // let scores = (korean, english, math);
   let scores = { korean: korean, english: english, math: math };
-
+  
   return scores;
 }
 

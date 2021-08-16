@@ -1,3 +1,4 @@
+
 /*
 ## 보충수업1
 
@@ -19,19 +20,17 @@ function inputScores() {
   math = isNaN(math) ? 0 : math;
 
   let scores = [korean, english, math];
-
+  
   return scores;
 }
 
 function calculateAverage(scores) {
   let sum = 0;
-
   for (i = 0; i < scores.length; i++) {
     sum += scores[i];
   }
 
   let average = sum / scores.length;
-
   return average;
 }
 

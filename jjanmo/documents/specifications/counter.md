@@ -2,7 +2,7 @@
 
 > 간단한 카운터를 만들어보자.
 
-![카운터](../../assets/screenshots/counter.png)
+![카운터](/jjanmo/screenshots/counter.png)
 
 위의 이미지처럼 버튼 3개가 존재하고 버튼을 누름에 따라서 해당 결과값이 표시된다.
 

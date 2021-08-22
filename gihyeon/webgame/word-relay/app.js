@@ -6,6 +6,34 @@ let number;
 let word;
 let nextWord;
 
+const onClickInput = (event) => {
+  if ($input.value.length === 3) {
+    if (!word) {
+      word = $input.value;
+      $word.textContent = $input.value;
+      $input.value = "";
+      return;
+    }
+
+    nextWord = $input.value;
+    if (word[word.length - 1] === nextWord[0]) {
+      word = nextWord;
+      $word.textContent = nextWord;
+      $input.value = "";
+
+      if (Number($order.textContent) + 1 > number) {
+        $order.textContent = 1;
+      } else {
+        $order.textContent = Number($order.textContent) + 1;
+      }
+    } else {
+      alert("올바르지 않은 단어입니다.");
+    }
+  } else {
+    alert("3글자 단어를 입력해주세요.");
+  }
+};
+
 function init() {
   while (!number) {
     const start = prompt("몇 명이 참가하나요?");

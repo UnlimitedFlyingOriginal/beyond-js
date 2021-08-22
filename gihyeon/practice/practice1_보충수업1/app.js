@@ -19,7 +19,7 @@ function inputScores() {
   math = isNaN(math) ? 0 : math;
 
   let scores = [korean, english, math];
-  
+
   return scores;
 }
 

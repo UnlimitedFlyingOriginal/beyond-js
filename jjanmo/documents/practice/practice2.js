@@ -4,7 +4,7 @@
  * @param {number} korean
  * @param {number} english
  * @param {number} math
- * @returns {string}
+ * @returns string
  *
  */
 

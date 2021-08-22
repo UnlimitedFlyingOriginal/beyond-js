@@ -8,7 +8,6 @@ function getRandomNumber(a, b) {
 
 // 확장자 구별 함수 만들기
 // solution1
-// -> switch-case 문은 완벽히 if-else문으로 대체 가능 😎
 function checkFileExtension(file) {
   const splitedFile = file.split('.');
   const fileType = splitedFile[1];
@@ -56,3 +55,10 @@ function checkFileType(file) {
   }
   return 'none';
 }
+
+/*
+체크 포인트
+문제2
+1. switch-case convention : https://github.com/airbnb/javascript#comparison--switch-blocks
+2. 자바스크립트에서의 여러가지 반복문의 차이에 대해서 알아보자. (일반적인 for문 / for of / for in)
+*/

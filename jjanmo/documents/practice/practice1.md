@@ -1,7 +1,5 @@
 # Practice1
 
-> 목표기간 : 8월15일까지
-
 > [Ref](https://www.a-mean-blog.com/ko/blog/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8%EB%A1%9C-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EC%9E%85%EB%AC%B8/_/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%97%B0%EC%8A%B5%EB%AC%B8%EC%A0%9C-8-1-%EB%B3%B4%EC%B6%A9%EC%88%98%EC%97%85-%ED%95%A8%EC%88%981)
 
 ## 보충수업1

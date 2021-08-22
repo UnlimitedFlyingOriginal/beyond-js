@@ -37,6 +37,7 @@ h1 {
   align-items: center;
   margin: 1em 0;
 }
+/* .button 클래스로 접근해도 무방 : 일반적으로 스타일은 클래스 셀렉터를 사용한다.*/
 button {
   all: unset;
   width: 100px;

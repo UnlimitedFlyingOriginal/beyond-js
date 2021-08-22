@@ -3,6 +3,17 @@ const $plus = document.querySelector('button:first-child');
 const $reset = document.querySelector('button:nth-child(2)');
 const $minus = document.querySelector('button:last-child');
 
+/*
+✅ DOM 검색 메서드
+1. (개인적인) 추천 😎
+querySelector()
+querySelectorAll()
+2.
+getElementById()
+getElementsByClassName()
+getElementsByTagName()
+*/
+
 function handleClickPlus() {
   const count = Number($result.textContent);
   $result.textContent = count + 1;

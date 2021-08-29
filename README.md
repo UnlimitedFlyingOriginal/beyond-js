@@ -70,3 +70,19 @@
 > 해당 링크는 NextStep에서 이루어지는 온라인 코드 리뷰 방식에 대한 가이드 링크입니다. 이를 참고하여 미니프로젝트를 진행하시면 됩니다.
 
 - [NextStep CodeReview Guide](https://github.com/next-step/nextstep-docs/blob/master/codereview/review-step1.md)
+
+<br />
+
+## 코드리뷰에 대한 답변 룰
+
+- merge possible
+
+  - 🙆 : 알겠다
+  - 🤷 / 🤦 : 피드백을 못알아먹겠다 / 그냥 못하겠다
+  - 🙋 : 스터디에서 물어보겠다
+
+- merge impossible
+
+  - 🤔 생각중이다
+
+- 이외 추가 사항이 있다면, 댓글을 달아주시면 됩니다.

@@ -1,4 +1,4 @@
-# Comma Opearation에 대해서
+# Comma Operation에 대해서
 
 > 몇가지 예시를 통해서 어떻게 사용하면 되는 것인지 알아봅시다.
 

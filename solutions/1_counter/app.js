@@ -1,22 +1,26 @@
-const $resultValue = document.querySelector(".resultValue");
-const $increase = document.querySelector(".increase");
-const $reset = document.querySelector(".reset");
-const $decrease = document.querySelector(".decrease");
+const $result = document.querySelector('.result');
+const $plus = document.querySelector('button:first-child');
+const $reset = document.querySelector('button:nth-child(2)');
+const $minus = document.querySelector('button:last-child');
 
-$increase.addEventListener('click',function(){
-  let count = Number($resultValue.textContent);
-   count = count + 1;
-   $resultValue.textContent = count;
-});
+function handleClickPlus() {
+  const count = Number($result.textContent);
+  $result.textContent = count + 1;
+}
 
-$decrease.addEventListener('click',function(){
-  let count = Number($resultValue.textContent);
-   count = count - 1;
-   $resultValue.textContent = count;
-});
+function handleClickMinus() {
+  const count = Number($result.textContent);
+  $result.textContent = count - 1;
+}
 
-$reset.addEventListener('click',function(){
-  let count = Number($resultValue.textContent);
-   count = 0;
-   $resultValue.textContent = count;
-});
+function handleClickReset() {
+  $result.textContent = 0;
+}
+
+function init() {
+  $plus.addEventListener('click', handleClickPlus);
+  $minus.addEventListener('click', handleClickMinus);
+  $reset.addEventListener('click', handleClickReset);
+}
+
+init();

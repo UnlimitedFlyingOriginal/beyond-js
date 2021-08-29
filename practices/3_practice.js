@@ -111,7 +111,6 @@ function solution7() {
 }
 
 // 다이아몬드 별찍기
-// 🔥 다른 방법 생각해보기
 function solution8() {
   for (let i = 0; i < 5; i++) {
     let row = '';

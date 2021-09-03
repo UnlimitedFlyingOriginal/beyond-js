@@ -1,7 +1,7 @@
 //## 랜덤 숫자 만드는 함수 만들기
 function getRandomNumber(num1, num2) {
-  min = Math.ceil(num1 + 0.1);
-  max = Math.floor(num2);
+  const min = Math.ceil(num1 + 1);
+  const max = Math.floor(num2);
   return Math.floor(Math.random() * (max - min) + min);
 }
 
@@ -13,8 +13,11 @@ function getRandomNumber(num1, num2) {
   let flag1 = false;
   let message1 = "첫번째 숫자를 입력해주세요.";
   while (!flag1) {
-    num1 = Number(prompt(message1));
-    flag1 = !isNaN(num1) ? true : false;
+    num1 = prompt(message1);
+    if (num1 !== "" && !isNaN(num1)) {
+      num1 = Number(num1);
+      break;
+    }
     message1 = "첫번째 숫자를 입력해주세요.\n(숫자를 입력해주세요.)";
   }
   let num2;
@@ -22,7 +25,10 @@ function getRandomNumber(num1, num2) {
   let message2 = "두번째 숫자를 입력해주세요.";
   while (!flag2) {
     num2 = Number(prompt(message2));
-    flag2 = !isNaN(num2) && num1 < num2 ? true : false;
+    if (num1 !== "" && !isNaN(num1) && num1 < num2) {
+      num2 = Number(num2);
+      break;
+    }
     message2 =
       "두번째 숫자를 입력해주세요.\n(첫번째 숫자보다 큰 숫자를 입력해주세요.)";
   }

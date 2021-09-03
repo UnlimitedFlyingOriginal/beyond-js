@@ -36,3 +36,51 @@ function getRandomNumber(num1, num2) {
 }
 
 //## 확장자 구별 함수 만들기
+function checkFileExtension(fileExtension) {
+  let fileType;
+
+  switch (fileExtension) {
+    case "png":
+    case "jpg":
+    case "jpeg":
+    case "gif":
+    case "bmp": {
+      fileType = "image";
+      break;
+    }
+    case "mov":
+    case "mp4":
+    case "avi":
+    case "wmv":
+    case "mpg":
+    case "mpeg":
+    case "mkv": {
+      fileType = "video";
+      break;
+    }
+    case "pdf":
+    case "doc":
+    case "docx": {
+      fileType = "doc";
+      break;
+    }
+    default: {
+      fileType = "none";
+      break;
+    }
+  }
+
+  return fileType;
+}
+
+{
+  let str = prompt(
+    "파일 이름과 확장자를 입력해주세요.\n입력 형식: 파일이름.확장자"
+  );
+
+  const strArray = str.split(".");
+  const fileExtension = strArray[1];
+
+  console.log(checkFileExtension(fileExtension));
+  //단, 파일이름은 확장자명과 같은 문자열로 만들지 않는다.???
+}

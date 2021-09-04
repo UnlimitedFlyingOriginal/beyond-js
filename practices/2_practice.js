@@ -42,7 +42,7 @@ function checkFileExtension(file) {
 
 // solution2
 function checkFileType(file) {
-  const type = {
+  const types = {
     image: ['png', 'jpg', 'jpeg', 'gif', 'bmp'],
     video: ['mov', 'mp4', 'avi', 'wmv', 'mpg', 'mpeg', 'mkv'],
     doc: ['pdf', 'doc', 'docx'],
@@ -50,8 +50,8 @@ function checkFileType(file) {
 
   const fileType = file.split('.')[1];
 
-  for (let key in type) {
-    if (type[key].includes(fileType)) return key;
+  for (let key in types) {
+    if (types[key].includes(fileType)) return key;
   }
   return 'none';
 }

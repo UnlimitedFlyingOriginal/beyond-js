@@ -5,6 +5,7 @@
 }
 body {
   font-family: sans-serif;
+  color: white;
 }
 .container {
   position: absolute;
@@ -15,11 +16,12 @@ body {
   height: 30vw;
   display: flex;
   flex-wrap: wrap;
+  border-radius: 10px;
 }
 .screen {
   width: 100%;
-  height: 20%;
-  background-color: #1c1c1c;
+  height: 25%;
+  background-color: #383737;
 }
 .buttons {
   width: 100%;
@@ -30,17 +32,28 @@ body {
 .button {
   width: 25%;
   height: 20%;
-  border: 0.5px solid #98999b;
+  border: 0.5px solid #505050;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
 }
 .clear {
   width: 75%;
   background-color: #505050;
   border: 0.5px solid #505050;
+  text-transform: uppercase;
+  cursor: pointer;
 }
-.operator {
+.operator,
+.equal {
   background-color: #ff9500;
+  cursor: pointer;
 }
 .number {
+  background-color: #7e7e7c;
+  cursor: pointer;
 }
 .zero {
+  width: 50%;
 }

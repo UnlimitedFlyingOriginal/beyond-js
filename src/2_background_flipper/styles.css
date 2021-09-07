@@ -2,19 +2,11 @@ body {
   font-family: sans-serif;
   width: auto;
   height: 500px;
-  /* background: pink; */
 }
 .wrapper {
-  /* background: plum; */
   margin: auto;
   width: 100%;
   height: 100%;
-}
-.background {
-  /* background: blueviolet; */
-}
-.button-container {
-  /* background: bisque; */
 }
 #tomato {
   background: tomato;

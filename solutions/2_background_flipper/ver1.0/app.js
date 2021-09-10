@@ -4,7 +4,6 @@ const $reset = document.querySelector('.reset');
 
 const COLOR = {
   WHITE: 'white',
-  BLACK: 'black',
 };
 
 let previousClickedButton = '';
@@ -28,10 +27,10 @@ function resetButtonStyle(previous) {
 
 function handleClickButton(e) {
   const target = e.target;
-  if (target.tagName === 'BUTTON') {
+  if (target.tagName === 'BUTTON' && target.className !== previousClickedButton) {
     const color = target.textContent;
     changeBackground(color);
-    changeButtonStyle(target, color, previousClickedButton);
+    changeButtonStyle(target, color);
     resetButtonStyle(previousClickedButton);
     previousClickedButton = target.className;
   }

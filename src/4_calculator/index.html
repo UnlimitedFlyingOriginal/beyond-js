@@ -9,28 +9,70 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="window"><span>0</span></div>
-      <div class="grid-container">
-        <div class="button operator-top">AC</div>
-        <div class="button operator-top">±</div>
-        <div class="button operator-top">%</div>
-        <div class="button operator-right">÷</div>
-        <div class="button number">7</div>
-        <div class="button number">8</div>
-        <div class="button number">9</div>
-        <div class="button operator-right">×</div>
-        <div class="button number">4</div>
-        <div class="button number">5</div>
-        <div class="button number">6</div>
-        <div class="button operator-right">-</div>
-        <div class="button number">1</div>
-        <div class="button number">2</div>
-        <div class="button number">3</div>
-        <div class="button operator-right">+</div>
-        <div class="button number"></div>
-        <div class="button number">0</div>
-        <div class="button number">.</div>
-        <div class="button operator-right">=</div>
+      <div class="window">
+        <span id="window">0</span>
+      </div>
+      <div class="grid-container" id="button-container">
+        <div class="button operator top clear">
+          <span class="button-text clear">AC</span>
+        </div>
+        <div class="button operator top">
+          <span class="button-text operator">+/-</span>
+        </div>
+        <div class="button operator top">
+          <span class="button-text operator">%</span>
+        </div>
+        <div class="button operator right">
+          <span class="button-text operator">÷</span>
+        </div>
+        <div class="button number">
+          <span class="button-text number">7</span>
+        </div>
+        <div class="button number">
+          <span class="button-text number">8</span>
+        </div>
+        <div class="button number">
+          <span class="button-text number">9</span>
+        </div>
+        <div class="button operator right">
+          <span class="button-text operator">×</span>
+        </div>
+        <div class="button number">
+          <span class="button-text number">4</span>
+        </div>
+        <div class="button number">
+          <span class="button-text number">5</span>
+        </div>
+        <div class="button number">
+          <span class="button-text number">6</span>
+        </div>
+        <div class="button operator right">
+          <span class="button-text operator">-</span>
+        </div>
+        <div class="button number">
+          <span class="button-text number">1</span>
+        </div>
+        <div class="button number">
+          <span class="button-text number">2</span>
+        </div>
+        <div class="button number">
+          <span class="button-text number">3</span>
+        </div>
+        <div class="button operator right">
+          <span class="button-text operator">+</span>
+        </div>
+        <div class="button back-space">
+          <span class="button-text back-space">←</span>
+        </div>
+        <div class="button number">
+          <span class="button-text number">0</span>
+        </div>
+        <div class="button number">
+          <span class="button-text number">.</span>
+        </div>
+        <div class="button operator right">
+          <span class="button-text operator">=</span>
+        </div>
       </div>
     </div>
     <script src="app.js"></script>

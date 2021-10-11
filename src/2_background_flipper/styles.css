@@ -1,3 +1,54 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   font-family: sans-serif;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+button {
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  padding: 10px 0px;
+  border-radius: 15px;
+  margin: 0 5px 5px;
+  color: white;
+  font-size: 15px;
+}
+
+.tomato {
+  background-color: tomato;
+}
+
+.blue {
+  background-color: blue;
+}
+.pink {
+  background-color: pink;
+}
+.green {
+  background-color: green;
+}
+.gold {
+  background-color: gold;
+}
+
+.reset {
+  background-color: black;
 }

@@ -1,0 +1,54 @@
+body {
+  font-family: sans-serif;
+}
+.wrapper {
+  width: 600px;
+  height: 400px;
+  margin: auto;
+  position: relative;
+}
+.background {
+  position: absolute;
+  background-image: url("../image/baseball.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  opacity: 0.3;
+  width: 100%;
+  height: 100%;
+  border: #92cfbf 3px solid;
+}
+.window {
+  position: absolute;
+  background: gray;
+  width: 540px;
+  height: 120px;
+  margin: 30px;
+  opacity: 0.7;
+}
+.input {
+  position: absolute;
+  background: whitesmoke;
+  width: 100px;
+  height: 30px;
+  margin: 310px 250px 60px 250px;
+  padding: 0px;
+  border: #92cfbf solid;
+  border-width: 1px;
+  text-align: center;
+  font-size: 20px;
+}
+.input:invalid {
+  border: red solid 1px;
+}
+.button {
+  position: absolute;
+  background: #92cfbf;
+  width: 70px;
+  height: 30px;
+  top: 350px;
+  left: 265px;
+  text-align: center;
+  font-size: 20px;
+  color: whitesmoke;
+}

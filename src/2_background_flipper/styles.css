@@ -12,6 +12,7 @@ body {
   align-items: center;
   flex-direction: column;
   font-family: sans-serif;
+  color: white;
 }
 
 .button-container {
@@ -28,12 +29,13 @@ button {
   padding: 10px 0px;
   border-radius: 15px;
   margin: 0 5px 5px;
-  color: white;
   font-size: 15px;
+  color: white
 }
 
 .tomato {
   background-color: tomato;
+ 
 }
 
 .blue {
@@ -44,6 +46,7 @@ button {
 }
 .green {
   background-color: green;
+
 }
 .gold {
   background-color: gold;
@@ -51,4 +54,6 @@ button {
 
 .reset {
   background-color: black;
+  
+  
 }

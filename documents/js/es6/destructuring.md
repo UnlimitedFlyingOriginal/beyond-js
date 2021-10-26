@@ -6,7 +6,7 @@
 
 ## 배열
 
-### 1. 기본사용법 + rest parameter
+### 1. 기본사용법
 
 ```js
 const positions = ["Gabrielle", "Niko", "Kate", "Fernando", "Mike"];
@@ -159,3 +159,9 @@ console.log(a, b, rest);
 Apple Boy { c: 'Cat', d: 'Dog', e: 'Elephant' }
 </details>
 <br />
+
+### 4.
+
+> nested object
+
+https://medium.com/@pyrolistical/destructuring-nested-objects-9dabdd01a3b8

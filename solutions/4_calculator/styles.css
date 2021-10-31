@@ -55,7 +55,8 @@ body {
   background-color: #ff9500;
   cursor: pointer;
 }
-.number {
+.number,
+.dot {
   background-color: #7e7e7c;
   cursor: pointer;
 }
